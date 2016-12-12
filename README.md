@@ -11,7 +11,8 @@ Mô tả chức năng của module
 --------------------------------------------------------------------------
 - Thực hiện đăng ký tài khoản và mã hóa thông tin tài khoản đăng ký, cụ thể ở đây là mã hóa mật khẩu
 - Cụ thể mật khẩu được hashing bằng thuật toán hashing BCrypt ( có thể sử dụng SHA hoặc MD5 tuy nhiên BCrypt là thuật toán mã hóa mạnh hơn ) với độ dài là 60 , sử dụng chuỗi salt ngẫu nhiên
-- Tài khoản đã mã hóa sau đó được lưu vào database
+- Tài khoản đã mã hóa sau đó được lưu vào database, cụ thể ở đây là trường mật khẩu được mã hóa
+ ![stack Overflow](https://lh3.googleusercontent.com/mr3OfAps4IF-BwrDO6zfewKFF6IR63oG-DNsKkSa607GFKLPlobk2gi2vBe8QfMh2g-TlzF7kPE7JfT6NZyeqXhpq3nfmGtBGP3tQIUvhOaxkpUYZPlMgwI9b-Z6A_hdPgNnduYDGDIevvlIvN-Bv11XNcA1cQlc57eX3mpdkrgv701b2g6HZ1MJiGLuImPDH53RVqxvoIz9vpoktzgk4jpa_ZedfbdcsZ3pH3mIKlg8TxLuvsclwRLCJ_SQaOU9xRNKfFXGe-PswmSV80tL8uDaw0MuMGX5GtIPA_f8E9HrYSxgE_VVp8-ZglMf6eJylN7ZkgGBvVtJLcOAyBvezpHxnP-r4bR0llswuY9wZ2iI0R5tD-N7Ewnab4axJP02Ivk-g55dMfkIJawaeGQAUU8lmY_WkaLp5tdirEuNTNTxInptCftUvQPW3u2AlCl7Vc7YDphS7oDNUpaf4hVXgUlo1Tsda9YDZWzomC16Ql6E8tjlEPOS0o0vooA4TnQhCZQW5WV4I4bUeApAOpQlIfy0xGZy9zOa30FdFIH1jd5_YPUI7Qt6wdMzYeBL5pihLM1Z17u7NooVihFheCLNdAk548jzK5CdE3HJJgriy5p700prn74x=w1625-h914-no)
 - Khi thực hiện đăng nhập sẽ thực hiện hashing mật khẩu để xác nhận tài khoản đăng nhập có chính xác hay không, và kiểm tra quyền của tài khoản và thực hiện cấp quyền cho user để truy cập vào màn hình 
 
 Một số hình ảnh Demo 
