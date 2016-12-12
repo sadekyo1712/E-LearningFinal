@@ -5,7 +5,7 @@ CodeAcademy
 Demo
 ---------------------------------------------------------------------------
 - Demo module Login-Logout-Signup cho website https://codeacademy.vn
-- Hiện tại phiên bản Demo chỉ có màn hình homepage, login và logout đã hoàn thiện, các màn hình còn lại đang được phát triển tiếp :) 
+- Hiện tại phiên bản Demo chỉ có màn hình home, login và logout đã hoàn thiện, các màn hình còn lại đang được phát triển tiếp :) 
 
 Mô tả chức năng của module
 --------------------------------------------------------------------------
