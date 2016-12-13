@@ -43,13 +43,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         httpSecurity.csrf().disable();
 
         httpSecurity.authorizeRequests().antMatchers("/account_info")
-                .access("hasAnyRole('ROLE_EMPLOYEE','ROLE_MANAGER','ROLE_USER','ROLE_SUPPLIER')");
+                .access("hasAnyRole('ROLE_ADMIN','ROLE_STUDENT','ROLE_MENTOR','ROLE_MODERATOR')");
         httpSecurity.authorizeRequests().antMatchers("/create_product")
-                .access("hasAnyRole('ROLE_MANAGER','ROLE_SUPPLIER')");
+                .access("hasAnyRole('ROLE_ADMIN','ROLE_STUDENT')");
         httpSecurity.authorizeRequests().antMatchers("/order_list", "/order")
-                .access("hasAnyRole('ROLE_EMPLOYEE','ROLE_MANAGER')");
+                .access("hasAnyRole('ROLE_ADMIN','ROLE_MENTOR')");
         httpSecurity.authorizeRequests().antMatchers("/product_admin")
-                .access("hasRole('ROLE_MANAGER')");
+                .access("hasRole('ROLE_ADMIN')");
 
         httpSecurity.authorizeRequests().and().exceptionHandling().accessDeniedPage("/403");
         httpSecurity.authorizeRequests().and().formLogin()
